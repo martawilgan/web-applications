@@ -1,0 +1,40 @@
+body{
+	background-color:#CCFFFF;
+}
+
+#container
+{
+	width:550px;
+	margin: 0 auto;
+	background-image:url('cupcakesBackground.jpg');
+	border:2px solid;
+	border-color: #9900CC;
+}
+
+#body
+{
+	background-color:white;
+	width:460px;
+	margin:5px auto;
+	padding:20px;
+	border:2px solid;
+	border-color: #9900CC;
+	text-align:center;
+	font-family:monospace;
+	letter-spacing:-1px;
+	color:#660000;
+}
+
+#userID
+{
+	background-color:#CCFFCC;
+	width:500px;
+	margin:5px auto;
+	padding:0px;
+	border:2px solid;
+	border-color: #9900CC;
+	text-align:center;
+	font-family:sans-serif;
+	letter-spacing:0px;
+	color:#660066;
+}

@@ -1,0 +1,74 @@
+body
+{
+	background-image:url('cupcakesBackground2.jpg');
+	background-attachment:fixed;
+}
+
+#container
+{
+	width:700px;
+	margin: 0 auto;
+	background-color:white;
+}
+
+#welcome
+{
+	background-color:#FFFFCC;
+	margin: 0 auto;
+	width:800px;
+	padding:0px;
+	text-align:left;
+	color:#CC99FF;
+}
+
+#userName
+{
+	background-color:#660066;
+	margin: 0 auto;
+	width:800px;
+	padding:0px;
+	font-family:sans-serif;
+	letter-spacing:0px;
+	text-align:right;
+	color:#FFCCCC;
+	font-size:small;
+	border:2px solid;
+	border-color: #9900CC;
+
+}
+
+#main
+{
+	background-color:white;
+	width:700px;
+	margin:0 auto;
+	padding:50px;
+	text-align:center;
+	font-family:monospace;
+	letter-spacing:-1px;
+	color:#660000;
+	border:2px solid;
+	border-color: #9900CC;
+}
+
+#shippingMain
+{
+	background-color:white;
+	width:700px;
+	margin:0 auto;
+	padding:50px;
+	text-align:left;
+	font-family:sans-serif;
+	letter-spacing:-1px;
+	color:#660000;
+	border:2px solid;
+	border-color: #9900CC;
+}
+
+.welcome
+{	
+	font-family:monospace;
+	letter-spacing:-3px;
+	font-size:x-large;
+	color: #CC99FF;
+}

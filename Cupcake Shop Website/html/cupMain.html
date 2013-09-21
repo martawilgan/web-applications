@@ -1,0 +1,131 @@
+<html>
+<head>
+<link href="cupMain.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="cupMain.js"/></script>
+<title>Choose your Cupcake!</title>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="userName">
+	<p class = "welcome">Welcome to the One Stop Cupcake Shop!</p>
+</div>
+
+<div id="main">
+
+<center><img src="OneStop2.gif"></center></br></br>
+
+<!-- using javascript to create the table -->
+
+<script type="text/javascript" language="javascript">
+
+	// array to hold table contents
+	var cupArray = new Array(15);
+	cupArray[0] = new Array('sunday</br> meadow','flowers01.gif','$3.75');
+	cupArray[1] = new Array('evening</br> meadow','flowers02.gif','$3.85');
+	cupArray[2] = new Array('wonderland</br> meadow','flowers03.gif','$3.95');
+	cupArray[3] = new Array('midnight</br> meadow','flowers04.gif','$3.85');
+	cupArray[4] = new Array('fantasy</br> meadow','flowers05.gif','$3.95');
+	cupArray[5] = new Array('summer</br> rainbow','rainbow01.gif','$2.75');
+	cupArray[6] = new Array('crayon</br> rainbow','rainbow02.gif','$2.95');
+	cupArray[7] = new Array('irish</br> rainbow','rainbow03.gif','$2.75');
+	cupArray[8] = new Array('underwater</br> rainbow','rainbow04.gif','$2.85');
+	cupArray[9] = new Array('princess</br> rainbow','rainbow05.gif','$2.75');
+	cupArray[10] = new Array('freshbloom</br> garden','script01.gif','$3.25');
+	cupArray[11] = new Array('playtime</br> garden','script02.gif','$3.25');
+	cupArray[12] = new Array('mermaid</br> garden','script03.gif','$3.45');
+	cupArray[13] = new Array('dreamworld</br> garden','script04.gif','$3.45');
+	cupArray[14] = new Array('hillside</br> garden','script05.gif','$3.35');
+
+	document.open();
+	document.write("<hr>");
+	document.write("<center><h1>Basic Styles and Prices</h1>");
+	document.write("<table>");
+	//document.write("<tr><td><h3>Name</h3></td><td><h3>Preview</h3></td><td><h3>Price</h3></td></tr>");
+	
+	// creating the table
+	
+	for(i=0; i <=cupArray.length-1; i++)
+	{
+		for(j=0; j<=2; j++)
+		{
+			if (j==0)
+				document.write("<td><h4>"+cupArray[i][j]+"</h4></td>");
+			else if (j==1)
+				document.write("<td><img src=" + cupArray[i][j] + "></td>");
+			else
+				document.write("<td>"+cupArray[i][j]+"&nbsp;&nbsp;&nbsp;&nbsp;</td>");
+		}
+		if( i == 2 || i == 5 || i == 8 || i == 11 || i == 14)
+			document.write("</tr>");
+	}	
+	document.write("</table>");
+	
+	document.close();
+	
+</script>
+<hr>
+<h2>Choose your Cupcake!</h2>
+</br>
+
+<label for "yourStyle" >Choose a style:&nbsp;</label>
+<select class = "yourStyle" id="yourStyle">
+	<option value = "" selected = "selected"></option>
+	<option value = "3.75">sunday meadow</option>
+	<option value = "3.85">evening meadow</option>
+	<option value = "3.95">wonderland meadow</option>
+	<option value = "3.85">midnight meadow</option>
+	<option value = "3.95">fantasy meadow</option>
+	<option value = "2.75">summer rainbow</option>
+	<option value = "2.95">crayon rainbow</option>
+	<option value = "2.75">irish rainbow</option>
+	<option value = "2.85">underwater rainbow</option>
+	<option value = "2.75">princess rainbow</option>
+	<option value = "3.25">freshbloom garden</option>
+	<option value = "3.25">playtime garden</option>
+	<option value = "3.45">mermaid garden</option>
+	<option value = "3.45">dreamworld garden</option>
+	<option value = "3.35">hillside garden</option>
+</select>
+</br>
+<label for "yourFlavor" >Choose a flavor: </label>
+<select class = "yourFlavor" id="yourFlavor">
+	<option value = "" selected = "selected"></option>
+	<option value ="0">vanilla</option>
+	<option value ="0" >chocolate</option>
+	<option value ="0" >chocolate chip</option>
+	<option value ="0" >pumpkin pie</option>
+	<option value =".5">strawberry (add $.50)</option>
+	<option value = ".5">raspberry (add $.50)</option>
+	<option value = ".5">blueberry (add $.50)</option>
+	<option value = ".75">coconut (add $.75)</option>
+	<option value = ".75">pecan (add $.75)</option>
+</select>	
+
+</br></br>
+<input value = "Add to Cart and Calculate Totals" type="button" onclick="addCupcake()">
+<input value = "Proceed to Checkout" type="button" onclick ="printReceipt()">
+
+</br></br>
+<hr>
+
+<h2>Cart:</h2>
+<p id = "yourCart">&nbsp;</></p>
+
+<hr>
+<h2>Total:</h2>
+<p id = "yourTotal">&nbsp;</></p>
+<p id = "yourTotalWTax">&nbsp;</></p>
+
+<hr>
+</br>
+<img src="OneStop3.gif"width=175px>
+</br>
+</div>
+</div>
+</body>
+</html>
+
