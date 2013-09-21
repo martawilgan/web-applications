@@ -1,0 +1,90 @@
+ body {
+  	
+  	background-color:#458B74;
+	background-image: url('');
+	background-repeat: repeat-y;
+	font-size: small;
+   
+  }
+  
+  #container { 
+  	width: 600px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	font-size: 3ex;			
+  
+  }
+  
+  #header {
+  	background-color:#F5FFFA;
+  	width:600px;
+  	height:80px;
+  	border: 2px outset;
+	border-color: #284942;
+	font-family: monospace;
+	font-size: large;
+	color:#353F3E;
+	letter-spacing:-3px;
+	text-align: center;
+  }
+  
+  #selectionBar {
+  	font-size: small;
+  	text-align: center;
+  	background-color:#B6C5BE;
+  	width: 600px;
+  	border: 2px outset;
+	border-color: #284942;
+  
+  }
+  
+  #main {
+  	background-color:#F5FFFA;
+  	width: 600px;
+  	height:400px;
+  	border: 2px outset;
+	border-color: #284942;
+  	margin: 0 auto;
+	padding: 0;
+  	
+  }
+  
+  #resultsImage {
+  	background-color:#F5FFFA;
+  	float:left;
+  	margin-top:53px;
+  }
+  
+  #resultsPage {
+  	float: left;
+  	margin-left:10px;
+  	margin-top:20px;
+  	padding: 20px;
+  	background-color:#F5FFFA;
+  
+  }
+ 
+ .command {
+ 	font-size: large;
+ 	color: #668E86;
+ 
+ }
+ 
+ .selectionLabels {
+ 
+ 	color:#3E766D;
+ 
+ }
+ 
+ .resultLabel {
+ 	color:#353F3E;
+ 
+ }
+ 
+.result {
+	font-size: small;
+	font-family: sans-serif;
+	color: #4C7064;
+
+}

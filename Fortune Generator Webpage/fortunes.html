@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<link href="fortunes.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="fortunes.js"/></script>
+  	<title>What is your fortune?</title>
+
+</head>
+
+<body>
+
+<div id = "container">
+<div id="header"><h1>Check your Fortune for Today!</h1></div>
+<div id = "selectionBar">
+
+Select Your Birthday!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for "selectMonth" > >>>Month: </label>
+<select class="yourBirthday" onchange="getDays()" id="selectMonth"
+>
+<option value = "" selected = "selected"></option>
+<option>JAN</option>
+<option>FEB</option>
+<option>MAR</option>
+<option>APR</option>
+<option>MAY</option>
+<option>JUN</option>
+<option>JUL</option>
+<option>AUG</option>
+<option>SEP</option>
+<option>OCT</option>
+<option>NOV</option>
+<option>DEC</option>
+</select>
+
+<label for "selectDay" > >>>Day: </label>
+<select class="yourBirthday" onchange = "setDayIndex()" id="selectDay">
+
+</select>
+
+		<input value = "Get Your Fortune" type="button" onclick="getFortune()">
+		
+</form>
+</div>
+
+<div id = "main">
+<div id="resultsImage">
+	<p class = "result" id ="pictureOfSign"><img src="questionMark.jpg"></></p>
+</div>
+
+<div id="resultsPage">
+
+	<p class = "resultLabel">Birthday:</p>
+	<p class = "result" id = "yourBirthday">&nbsp;</></p>
+	
+	<p class = "resultLabel">Sign:</p>
+	<p class = "result" id = "yourSign">&nbsp;</></p>
+	
+	<p class = "resultLabel">Fortune for Today:</p>
+	<p class = "result" id = "yourFortune">&nbsp;</></p>
+	
+</div>
+</div>
+</div>
+	
+</body>
+
+</html>
