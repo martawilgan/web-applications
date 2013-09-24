@@ -1,0 +1,122 @@
+<html>
+
+	<head>
+		<title>M a d L i b s  - Create your own story!</title>
+		<link href="http://i5.nyu.edu/~mmw319/story.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="http://i5.nyu.edu/~mmw319/story.js"/></script>
+	</head>
+	
+	
+	
+	
+	<body>
+	
+	<div id ="container">
+	<div id = "defaultHeader">
+	<h1>M a d L i b s - <u>C</u>reate <i>your</i> <b>own</b> s t o r y!</h1>
+	</div>
+	
+	<div id = "default">
+	<form id="formStory" name="formStory" method="post" 
+   	action="http://i5.nyu.edu/cgi-bin/cgiwrap/~mmw319/asg8_Marta_Wilgan.php"> 
+   	
+		Choose the mood of the story:
+		<select name="mood">
+			<option value ="" selected = "selected"></option>
+ 			<option value ="1">scary</option>
+ 			<option value ="2">happy</option>
+ 			<option value ="3">tragic</option>
+		</select></br>
+
+		Choose the time of day:
+		<select name="time">
+			<option value ="" selected = "selected"></option>
+ 			<option value ="sunrise">sunrise</option>
+ 			<option value ="morning">morning</option>
+ 			<option value ="afternoon">afternoon</option>
+ 			<option value ="night">nightfall</option>
+		</select></br>
+		
+		Choose the weather:
+		<select name="temp">
+			<option value ="" selected = "selected"></option>
+ 			<option value ="cold and snowing">snowing</option>
+ 			<option value ="dark and raining">raining</option>
+ 			<option value ="warm and sunny">sunny</option>
+ 			<option value ="hot and humid">humid</option>
+ 			<option value ="cool and breezy">breezy</option>
+		</select></br>
+		
+		Choose the first location:
+		<select name="firstLoc">
+			<option value ="" selected = "selected"></option>
+ 			<option value ="hotel">hotel</option>
+ 			<option value ="open house">open house</option>
+ 			<option value ="log cabin">log cabin</option>
+ 			<option value ="theater">theater</option>
+		</select></br>
+		
+		Choose the second location:
+		<select name="secondLoc">
+			<option value ="" selected = "selected"></option>
+ 			<option value ="forest">forest</option>
+ 			<option value ="big city streets">streets of big city</option>
+ 			<option value ="amusement park">amusement park</option>
+		</select></br>
+		
+		Choose the main character:
+		<select name="animal">
+			<option value ="" selected = "selected"></option>
+ 			<option value ="big fat rat">rat</option>
+ 			<option value ="cute kitty">kitty</option>
+ 			<option value ="slimy frog">frog</option>
+ 			<option value ="tiny porcupine">porcupine</option>
+		</select></br>
+		
+		Choose a sex for your character:
+			<input type="radio" name="sex" value="he">male
+			<input type="radio" name="sex" value="she">female
+		</br>
+		
+		Enter a name for your character:
+			<input type="text" name="name"></br>
+
+
+		
+		Choose a special power for your character:
+		<select name="power">
+			<option value ="" selected = "selected"></option>
+ 			<option value ="flight">flight</option>
+ 			<option value ="super strength">super strength</option>
+ 			<option value ="invisibility">invisibility</option>
+		</select></br>
+		
+		Enter an adjective ending with -ing:
+			<input type="text" name="adj"></br>
+			
+		Enter a noun:
+			<input type="text" name="noun"></br>	
+		
+		Choose a color for the layout of the next page:
+		<select name="color">
+			<option value ="" selected = "selected"></option>
+ 			<option value ="1">green</option>
+ 			<option value ="2">blue</option>
+ 			<option value ="3">pink</option>
+		</select></br>
+		
+		Italicize story's text on next page?
+		<input type="checkbox" name="italicize"/></br></br>
+
+		
+
+	 <input type="submit" value="create story" name="submit" " />
+   	<input type="reset"  value="refresh"    name="cancel" />
+
+	</form>
+	
+	</div>
+	</div>
+	</body>
+	
+</html>
