@@ -1,0 +1,84 @@
+body
+{
+	background-color:#41627E;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11pt;
+	line-height:13pt;
+	text-align:justify;
+}
+h1, h2, h3, h4, h5
+{
+	font-weight:lighter;
+}
+#container
+{
+	width: 65%;
+	margin: 0 auto;
+	padding: 0;
+	background-color:white;	
+}
+#header
+{
+	background-color:#41627E;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:30pt;
+	font-weight:bold;
+	color:white;
+	line-height:35pt;
+	text-align:left;
+}
+#main
+{
+	padding: 30px 60px 30px 60px;
+}
+
+#menubar
+{
+	background-color:#002255;
+	height:17pt;
+}
+#menubar td
+{
+	padding:0px 8px 0px 8px;
+	font-size:11pt;
+	line-height:10pt;	
+}
+#menubar a
+{
+	border-style:none;
+	text-decoration:none;
+	color:white;
+}
+#menubar a:hover
+{
+	border-style:none;
+	text-decoration:none;
+	background-color:#6699ff;
+	color:black;
+}
+#results
+{
+	font-family:Tahoma, Geneva, sans-serif;
+	border-collapse:collapse;
+}
+#results td, #results th 
+{
+	font-size:small;
+	border:1px solid #6699ff;
+	padding:3px 3px 3px 3px;
+}
+#results th 
+{
+	font-size:small;
+	font-weight:lighter;
+	text-align:left;
+	padding-top:4px;
+	padding-bottom:4px;
+	background-color:#002255;
+	color:white;
+}
+#results tr.alt td 
+{
+	color:#000000;
+	background-color:#E0ECF8;
+}
