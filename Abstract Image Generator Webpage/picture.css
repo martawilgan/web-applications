@@ -1,0 +1,22 @@
+#container
+{
+	width:600px;
+	margin: 0 auto;
+	border:2px solid;
+	border-color: #000000;
+	text-align:center;
+}
+
+h1
+{
+	letter-spacing:-2px;
+	font-variant:small-caps;
+	font-family:serif;
+	font-size:xx-large;
+}
+
+h2
+{
+	font-family:sans-serif;
+	font-weight:lighter;
+}
